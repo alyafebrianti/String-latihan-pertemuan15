@@ -156,6 +156,90 @@ Berikut adalah penjelasan untuk masing-masing hasil output tersebut:
 
 Hasil ini menunjukkan bagaimana fungsi string bawaan Python dapat digunakan untuk memodifikasi teks dengan berbagai cara.
 
-## Penjelasan Hasil Input Latihan 2
 
+## Penjelasan Hasil Input Latihan 2
+Program yang kamu berikan adalah sebagai berikut:
+
+```python
+umur = 18
+txt = 'Hello, nama saya alya, dan umur saya adalah {} tahun'
+
+print(txt.format(umur))
+```
+
+Berikut adalah penjelasan dari setiap bagian dan bagaimana program ini bekerja:
+
+### 1. **Definisi Variabel `umur`**:
+   ```python
+   umur = 18
+   ```
+   Variabel `umur` didefinisikan dengan nilai **18**. Ini berarti bahwa variabel `umur` menyimpan angka 18.
+
+### 2. **Definisi Variabel `txt`**:
+   ```python
+   txt = 'Hello, nama saya alya, dan umur saya adalah {} tahun'
+   ```
+   Variabel `txt` berisi sebuah string yang memiliki placeholder `{}` di dalamnya. Placeholder `{}` adalah tempat di mana nilai tertentu akan disisipkan nanti.
+
+### 3. **Penggunaan `txt.format(umur)`**:
+   ```python
+   print(txt.format(umur))
+   ```
+   - Fungsi `.format(umur)` digunakan untuk menggantikan placeholder `{}` dalam string `txt` dengan nilai yang ada di dalam variabel `umur`, yaitu **18**.
+   - Hasil dari operasi ini adalah string baru, di mana `{}` digantikan oleh angka **18**.
+
+### 4. **Proses Substitusi**:
+   String yang awalnya adalah `'Hello, nama saya alya, dan umur saya adalah {} tahun'`, setelah menggunakan `.format(umur)` akan menjadi:
+   ```
+   'Hello, nama saya alya, dan umur saya adalah 18 tahun'
+   ```
+
+### 5. **Menampilkan Output**:
+   Setelah proses substitusi selesai, `print()` digunakan untuk mencetak string yang sudah diganti ke layar. Sehingga, hasil yang akan muncul di layar adalah:
+
+   ```
+   Hello, nama saya alya, dan umur saya adalah 18 tahun
+   ```
+
+### Kesimpulan:
+Hasil dari program ini adalah sebuah kalimat yang menyatakan bahwa "nama saya alya" dan "umur saya adalah 18 tahun". Program ini menggantikan placeholder `{}` dalam string dengan nilai dari variabel `umur`, yang dalam hal ini adalah 18.
+
+
+## Penjelasan Hasil Output Latihan 2
+Hasil output pada program tersebut adalah:
+
+```
+Hello, nama saya alya, dan umur saya adalah 18 tahun
+```
+
+Penjelasan secara rinci adalah sebagai berikut:
+
+1. **Teks yang didefinisikan dalam variabel `txt`:**
+   Variabel `txt` berisi string:
+   ```python
+   'Hello, nama saya alya, dan umur saya adalah {} tahun'
+   ```
+   String ini memiliki placeholder `{}` yang bertujuan untuk digantikan dengan nilai tertentu saat program dijalankan.
+
+2. **Penggunaan metode `.format()`**:
+   Pada baris berikut:
+   ```python
+   print(txt.format(umur))
+   ```
+   Kamu menggunakan metode `.format()` untuk menggantikan placeholder `{}` dengan nilai yang diberikan, yaitu nilai dari variabel `umur` yang bernilai **18**.
+
+3. **Proses substitusi**:
+   - Nilai **18** dari variabel `umur` menggantikan `{}` dalam string.
+   - Hasilnya adalah string baru: `'Hello, nama saya alya, dan umur saya adalah 18 tahun'`.
+
+4. **Output yang dicetak**:
+   Setelah substitusi, string yang sudah diganti nilai placeholder `{}` dengan angka `18` dicetak ke layar oleh perintah `print()`. 
+
+   Maka, hasil yang terlihat di layar adalah:
+   ```
+   Hello, nama saya alya, dan umur saya adalah 18 tahun
+   ```
+
+### Kesimpulan:
+Output tersebut merupakan hasil dari mengganti placeholder `{}` di dalam string dengan nilai variabel `umur` yang bernilai 18.
 
