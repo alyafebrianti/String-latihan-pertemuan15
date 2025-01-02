@@ -1,3 +1,6 @@
+## Nama : Alya Febrianti
+## kelas : TI.24.A1
+
 # String-latihan-pertemuan15
 ## Hasil Input Latihan 1
 
